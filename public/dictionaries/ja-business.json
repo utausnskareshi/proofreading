@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "name": "ビジネス文書用辞書",
+  "description": "ビジネス文書で避けるべき表現や言い換え推奨",
+  "rules": [
+    { "expected": "了承", "patterns": ["了承下さい"], "severity": "warning", "message": "「ご了承ください」が適切な敬語表現です" },
+    { "expected": "ご一読ください", "patterns": ["読んでください"], "severity": "info", "message": "ビジネス文書では「ご一読ください」「ご確認ください」など丁寧語が推奨されます" },
+    { "expected": "ご確認ください", "patterns": ["確認して下さい"], "severity": "info", "message": "「ご確認ください」の方がビジネス文書として適切です" },
+    { "expected": "貴社", "patterns": ["御社"], "severity": "info", "message": "文章では「貴社」、口頭では「御社」が一般的です" },
+    { "expected": "拝啓", "patterns": ["前略.*貴社"], "severity": "info", "message": "正式な文書では「拝啓」で始め「敬具」で結びます" },
+    { "expected": "なるべく", "patterns": ["なるべく"], "severity": "info", "message": "ビジネス文書では「可能な限り」「できる限り」が好まれます" },
+    { "expected": "とても", "patterns": ["とても"], "severity": "info", "message": "ビジネス文書では「非常に」「大変」が好まれることがあります" },
+    { "expected": "すごく", "patterns": ["すごく"], "severity": "warning", "message": "口語的すぎる表現です。「非常に」などへ置き換えを検討してください" },
+    { "expected": "やる", "patterns": ["やります"], "severity": "info", "message": "ビジネス文書では「行います」「実施します」が好まれます" },
+    { "expected": "教えてください", "patterns": ["教えて下さい"], "severity": "info", "message": "「ご教示ください」「お知らせください」がより丁寧です" }
+  ]
+}

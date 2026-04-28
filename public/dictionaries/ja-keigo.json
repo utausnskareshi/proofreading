@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "name": "敬語・丁寧語辞書",
+  "description": "敬語の誤用や二重敬語を検出する辞書",
+  "rules": [
+    { "expected": "おっしゃる", "patterns": ["おっしゃられる"], "severity": "warning", "message": "二重敬語です。「おっしゃる」のみで尊敬語として完結します" },
+    { "expected": "ご覧になる", "patterns": ["ご覧になられる"], "severity": "warning", "message": "二重敬語です。「ご覧になる」のみで十分です" },
+    { "expected": "召し上がる", "patterns": ["お召し上がりになられる"], "severity": "warning", "message": "二重敬語です" },
+    { "expected": "拝見する", "patterns": ["拝見させていただく"], "severity": "warning", "message": "「拝見する」自体が謙譲語です" },
+    { "expected": "伺う", "patterns": ["お伺いさせていただく"], "severity": "warning", "message": "二重敬語です。「伺う」または「お伺いする」で十分です" },
+    { "expected": "お話しする", "patterns": ["お話しさせていただく"], "severity": "info", "message": "「させていただく」の多用に注意してください" },
+    { "expected": "了解しました", "patterns": ["了解です"], "severity": "info", "message": "ビジネス文書では「承知しました」「かしこまりました」が一般的です" },
+    { "expected": "とんでもないことです", "patterns": ["とんでもございません"], "severity": "warning", "message": "「とんでもない」は一語のため「とんでもございません」は誤用です" },
+    { "expected": "お読みになる", "patterns": ["お読みになられる"], "severity": "warning", "message": "二重敬語です" },
+    { "expected": "なさる", "patterns": ["されられる"], "severity": "warning", "message": "尊敬語の重複です" },
+    { "expected": "申し上げる", "patterns": ["申させていただく"], "severity": "warning", "message": "「申す」自体が謙譲語です" }
+  ]
+}

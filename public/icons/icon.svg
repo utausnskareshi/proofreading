@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#1f6feb"/>
+  <g fill="#ffffff" font-family="-apple-system, 'Hiragino Sans', sans-serif" font-weight="700" text-anchor="middle">
+    <text x="256" y="220" font-size="180">校</text>
+    <text x="256" y="400" font-size="180">正</text>
+  </g>
+  <path d="M 80 460 L 160 460" stroke="#ffd33d" stroke-width="14" stroke-linecap="round"/>
+  <path d="M 352 460 L 432 460" stroke="#ffd33d" stroke-width="14" stroke-linecap="round"/>
+</svg>

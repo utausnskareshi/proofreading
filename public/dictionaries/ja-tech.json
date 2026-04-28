@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "name": "技術文書用辞書",
+  "description": "技術文書・マニュアルで使われる用語の表記統一",
+  "rules": [
+    { "expected": "クライアント", "patterns": ["クライアン[^ト]"], "severity": "info", "message": "「クライアント」の表記を確認してください" },
+    { "expected": "インターフェース", "patterns": ["インタフェース", "インターフェイス"], "severity": "info", "message": "「インターフェース」表記で統一を推奨" },
+    { "expected": "デフォルト", "patterns": ["ディフォルト"], "severity": "warning", "message": "「デフォルト」が一般的な表記です" },
+    { "expected": "アップロード", "patterns": ["アップ・ロード", "うpロード"], "severity": "warning", "message": "正式な表記は「アップロード」です" },
+    { "expected": "ダウンロード", "patterns": ["ダウン・ロード"], "severity": "warning", "message": "正式な表記は「ダウンロード」です" },
+    { "expected": "ウェブ", "patterns": ["WEB", "Ｗｅｂ"], "severity": "info", "message": "本文中では「Web」または「ウェブ」表記で統一を推奨" },
+    { "expected": "Web", "patterns": ["web(サイト|ページ|アプリ)"], "severity": "info", "message": "「Web」と先頭大文字表記が一般的です" },
+    { "expected": "JavaScript", "patterns": ["javascript", "Java[Ss]cript"], "severity": "warning", "message": "正式表記は「JavaScript」です" },
+    { "expected": "GitHub", "patterns": ["github(?!\\.com)", "Github"], "severity": "warning", "message": "正式表記は「GitHub」です" },
+    { "expected": "iPhone", "patterns": ["I[Pp]hone", "ｉPhone"], "severity": "warning", "message": "正式表記は「iPhone」です" },
+    { "expected": "iOS", "patterns": ["I[Oo][Ss]"], "severity": "warning", "message": "正式表記は「iOS」です" },
+    { "expected": "Android", "patterns": ["android"], "severity": "warning", "message": "正式表記は「Android」です" },
+    { "expected": "OSS", "patterns": ["O\\.S\\.S\\."], "severity": "info", "message": "略語の表記揺れを統一しましょう" },
+    { "expected": "API", "patterns": ["A\\.P\\.I\\."], "severity": "info", "message": "略語の表記揺れを統一しましょう" },
+    { "expected": "URL", "patterns": ["U\\.R\\.L\\."], "severity": "info", "message": "略語の表記揺れを統一しましょう" }
+  ]
+}

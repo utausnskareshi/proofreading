@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "name": "冗長表現辞書",
+  "description": "冗長な日本語表現を簡潔な表現に置き換える辞書",
+  "rules": [
+    { "expected": "できます", "patterns": ["することができます"], "severity": "info", "message": "「〜することができます」は「〜できます」と簡潔にできます" },
+    { "expected": "できる", "patterns": ["することができる"], "severity": "info", "message": "「〜することができる」は「〜できる」と簡潔にできます" },
+    { "expected": "可能です", "patterns": ["することが可能です"], "severity": "info", "message": "「〜することが可能です」は冗長です" },
+    { "expected": "必要です", "patterns": ["する必要があります"], "severity": "info", "message": "「〜する必要があります」は「〜必要です」で十分なことがあります" },
+    { "expected": "した", "patterns": ["を行った"], "severity": "info", "message": "「〜を行う」は「〜する」と書ける場合があります" },
+    { "expected": "について", "patterns": ["に関して"], "severity": "info", "message": "「〜に関して」より「〜について」の方が簡潔です" },
+    { "expected": "により", "patterns": ["によって"], "severity": "info", "message": "「〜によって」は「〜により」と書ける場合があります" },
+    { "expected": "今", "patterns": ["現時点において"], "severity": "info", "message": "より簡潔な表現に置き換えられます" },
+    { "expected": "ため", "patterns": ["のために"], "severity": "info", "message": "目的を表す「〜のために」は「〜ため」で十分なことがあります" },
+    { "expected": "まず", "patterns": ["まず最初に", "最初にまず"], "severity": "warning", "message": "「まず」と「最初に」は意味が重複しています" },
+    { "expected": "最初", "patterns": ["いちばん最初", "一番最初"], "severity": "warning", "message": "「いちばん最初」は重複表現です" },
+    { "expected": "最後", "patterns": ["いちばん最後", "一番最後"], "severity": "warning", "message": "「いちばん最後」は重複表現です" },
+    { "expected": "予測", "patterns": ["あらかじめ予測"], "severity": "warning", "message": "「予測」自体に「あらかじめ」の意味が含まれます" },
+    { "expected": "予約", "patterns": ["あらかじめ予約"], "severity": "warning", "message": "「予約」自体に「あらかじめ」の意味が含まれます" },
+    { "expected": "違和感", "patterns": ["違和感を感じる"], "severity": "warning", "message": "「違和感を覚える」が一般的です" },
+    { "expected": "馬から落馬", "patterns": ["馬から落馬"], "severity": "error", "message": "重複表現の代表例です" },
+    { "expected": "射程", "patterns": ["射程距離"], "severity": "warning", "message": "「射程」自体に「距離」の意味が含まれます" }
+  ]
+}

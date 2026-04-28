@@ -1,0 +1,48 @@
+{
+  "name": "proofreading",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "オフラインで動作する日本語校正PWA（textlint互換ルール・辞書のインポート/エクスポート対応）",
+  "keywords": [
+    "japanese",
+    "proofreading",
+    "textlint",
+    "pwa",
+    "offline",
+    "kuromoji",
+    "校正"
+  ],
+  "license": "MIT",
+  "homepage": "https://utausnskareshi.github.io/proofreading/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/utausnskareshi/proofreading.git"
+  },
+  "bugs": {
+    "url": "https://github.com/utausnskareshi/proofreading/issues"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "icons": "node scripts/generate-icons.mjs",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "diff": "^5.2.0",
+    "idb": "^8.0.0",
+    "kuromoji": "^0.1.2",
+    "pako": "^2.1.0",
+    "path-browserify": "^1.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "vite": "^5.4.0",
+    "vite-plugin-pwa": "^0.20.5",
+    "vite-plugin-static-copy": "^1.0.6"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
